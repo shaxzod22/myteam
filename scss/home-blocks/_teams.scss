@@ -3,6 +3,10 @@
 // teams
 .teams{
     background-color: #012F34;
+    background-image: url(./../../img/second-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100px 244px;
+    background-position: right bottom;
     
     &__container{
         padding: 140px 0;
