@@ -289,6 +289,47 @@
   height: 62px;
 }
 
+.started {
+  background-color: #F67E7E;
+  position: relative;
+}
+.started::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 169px;
+  height: 122px;
+  left: 0;
+  bottom: 0;
+  background-image: url(./../../img/fourth-section-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.started__container {
+  padding: 76px 0;
+}
+.started__wrapper {
+  display: flex;
+  flex-direction: falce;
+  align-items: center;
+  flex-direction: falce;
+  align-items: center;
+  gap: 260px;
+  justify-content: center;
+}
+.started__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012F34;
+}
+.started__contact-link {
+  border: 2px solid #012F34;
+  color: #012F34;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
