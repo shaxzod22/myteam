@@ -2,7 +2,6 @@
   position: sticky;
   top: 0;
   background-color: #014E56;
-  padding-bottom: 56px;
 }
 .header__container {
   padding: 73px 0;
@@ -42,6 +41,74 @@
 .header__contact-link {
   border: 2px solid #fff;
   color: #fff;
+}
+
+.talent {
+  padding-top: 56px;
+  background-image: url(./../../img/first-section-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100px 200px;
+  background-position: left 50px;
+}
+.talent__wrapper {
+  display: flex;
+  flex-direction: falce;
+  align-items: falce;
+  flex-direction: falce;
+  align-items: falce;
+  gap: 125px;
+  padding-bottom: 250px;
+  background-image: url(./../../img/first-section-bg2.png);
+  background-repeat: no-repeat;
+  background-size: 358px 100px;
+  background-position: right bottom;
+}
+.talent__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  max-width: 540px;
+}
+.talent__seperate {
+  color: #F67E7E;
+}
+.talent__right {
+  max-width: 445px;
+}
+.talent__line {
+  background-color: #79C8C7;
+  margin-bottom: 79px;
+}
+.talent__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.teams {
+  background-color: #012F34;
+}
+.teams__container {
+  padding: 140px 0;
+}
+.teams__line {
+  background-color: #F67E7E;
+  margin-bottom: 54px;
+}
+.teams__content-box {
+  display: flex;
+  flex-direction: falce;
+  align-items: falce;
+  flex-direction: falce;
+  align-items: falce;
+  gap: 150px;
+}
+.teams__heading {
+  max-width: 420px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -412,6 +479,11 @@ main {
   line-height: 28px;
   width: 153px;
   height: 48px;
+}
+
+.line {
+  width: 50px;
+  height: 4px;
 }
 
 /* livvic-600 - latin */

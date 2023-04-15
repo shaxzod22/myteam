@@ -3,5 +3,51 @@
 
 // talent
 .talent{
+    padding-top: 56px;
+    background-image: url(./../../img/first-section-bg1.png);
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+    background-position: left 50px;
     
+    
+    
+    &__wrapper{
+        @include mixins.df();
+        gap: 125px;
+        padding-bottom: 250px;
+        background-image: url(./../../img/first-section-bg2.png);
+        background-repeat: no-repeat;
+        background-size: 358px 100px;
+        background-position: right bottom;
+    }
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100px;
+        color: variables.$primary-color;
+        max-width: 540px;
+    }
+    
+    &__seperate{
+        color: variables.$secondary-color;
+    }
+    
+    &__right{
+        max-width: 445px;
+    }
+    
+    &__line{
+        background-color: variables.$third-color;
+        margin-bottom: 79px;
+    }
+    
+    &__text{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: variables.$primary-color;
+    }
 }

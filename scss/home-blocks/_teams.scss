@@ -1,2 +1,24 @@
 @use './../variables';
 @use './../mixins';
+// teams
+.teams{
+    background-color: #012F34;
+    
+    &__container{
+        padding: 140px 0;
+    }
+    
+    &__line{
+        background-color:variables.$secondary-color ;
+        margin-bottom: 54px;
+    }
+
+    &__content-box{
+        @include mixins.df();
+        gap: 150px;
+    }
+
+    &__heading{
+        max-width: 420px;
+    }
+}
