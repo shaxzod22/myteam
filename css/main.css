@@ -109,6 +109,72 @@
 }
 .teams__heading {
   max-width: 420px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+.teams__list {
+  display: flex;
+  flex-direction: column;
+  align-items: falce;
+  flex-direction: column;
+  align-items: falce;
+  gap: 32px;
+}
+.teams__item {
+  display: flex;
+  flex-direction: falce;
+  align-items: center;
+  flex-direction: falce;
+  align-items: center;
+  gap: 23px;
+  max-width: 540px;
+}
+.teams__img__content {
+  width: 56px;
+  height: 56px;
+  background-color: #2C6269;
+  border-radius: 50%;
+  position: relative;
+}
+.teams__img__content::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-image: url(./../../img/individual.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: -25%;
+  right: 25%;
+}
+.teams__img__content--secondary::before {
+  background-image: url(./../../img/implement.png);
+}
+.teams__img__content--thirdly::before {
+  background-image: url(./../../img/productivity.png);
+}
+.teams__inner-box {
+  max-width: 445px;
+}
+.teams__inner__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  color: #F67E7E;
+}
+.teams__inner__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
