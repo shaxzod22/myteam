@@ -12,13 +12,82 @@
         background-color:variables.$secondary-color ;
         margin-bottom: 54px;
     }
-
+    
     &__content-box{
         @include mixins.df();
         gap: 150px;
     }
-
+    
     &__heading{
         max-width: 420px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: variables.$primary-color;
+    }
+    
+    &__list{
+        @include mixins.df($direction:column);
+        gap: 32px;
+    }
+    
+    &__item{
+        @include mixins.df($align:center);
+        gap: 23px;
+        max-width: 540px;
+    }
+    
+    &__img__content{
+        width: 56px;
+        height: 56px;
+        background-color: #2C6269;
+        border-radius: 50%;
+        position: relative;
+        
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            background-image: url(./../../img/individual.png);
+            @include mixins.bgi();
+            top: -25%;
+            right: 25%;
+        }
+    }
+    
+    &__img__content--secondary{
+        &::before{
+            background-image: url(./../../img/implement.png);
+        }
+    }
+    
+    &__img__content--thirdly{
+        &::before{
+            background-image: url(./../../img/productivity.png);
+        }
+    }
+    
+    &__inner-box{
+        max-width: 445px;
+    }
+    
+    &__inner__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 16px;
+        color:variables.$secondary-color ;
+    }
+    
+    &__inner__text{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color:variables.$other-color ;
     }
 }
