@@ -1,3 +1,67 @@
+.footer {
+  background-color: #002529;
+}
+.footer__container {
+  padding: 48px 0;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: falce;
+  align-items: falce;
+  flex-direction: falce;
+  align-items: falce;
+}
+.footer__links-box__left {
+  max-width: 160px;
+  margin-right: 125px;
+}
+.footer__logo__link {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.footer__list {
+  margin-right: 396px;
+}
+.footer__item {
+  max-width: 174px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 255px;
+  gap: 51px;
+}
+.footer__target__list {
+  display: flex;
+  flex-direction: falce;
+  align-items: center;
+  flex-direction: falce;
+  align-items: center;
+  gap: 16px;
+}
+.footer__target__link {
+  fill: #fff;
+}
+.footer__target__link:hover {
+  fill: #F67E7E;
+}
+.footer__rights-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .header {
   background-color: #014E56;
 }
@@ -36,9 +100,16 @@
   line-height: 28px;
   color: #fff;
 }
+.header__nav__link:hover {
+  color: #F67E7E;
+}
 .header__contact-link {
   border: 2px solid #fff;
   color: #fff;
+}
+.header__contact-link:hover {
+  background-color: #fff;
+  color: #012F34;
 }
 
 .talent {
@@ -328,6 +399,10 @@
 .started__contact-link {
   border: 2px solid #012F34;
   color: #012F34;
+}
+.started__contact-link:hover {
+  background-color: #012F34;
+  color: #fff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -663,6 +738,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
+}
+a:active {
+  transform: scale(1.1);
+  transition: all ease 0.8;
 }
 
 img {
