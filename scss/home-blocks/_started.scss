@@ -1,2 +1,43 @@
 @use './../variables';
 @use './../mixins';
+
+// started
+.started{
+    background-color: variables.$secondary-color;
+    position: relative;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 169px;
+        height: 122px;
+        left: 0;
+        bottom: 0;
+        background-image: url(./../../img/fourth-section-bg.png);
+        @include mixins.bgi();
+    }
+    
+    &__container{
+        padding: 76px 0;
+    }
+    
+    &__wrapper{
+        @include mixins.df($align:center);
+        gap: 260px;
+        justify-content: center;
+    }
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: variables.$fourth-color;
+    }
+    
+    &__contact-link{
+        border: 2px solid variables.$fourth-color;
+        color: variables.$fourth-color;
+    }
+}
