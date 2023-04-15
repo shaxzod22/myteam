@@ -39,5 +39,10 @@
     &__contact-link{
         border: 2px solid variables.$fourth-color;
         color: variables.$fourth-color;
+        
+        &:hover{
+            background-color:variables.$fourth-color ;
+            color: variables.$primary-color;
+        }
     }
 }

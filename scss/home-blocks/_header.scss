@@ -6,7 +6,7 @@
     // position: sticky;
     // top: 0;
     background-color:#014E56;
-  
+    
     &__container{
         padding: 73px 0;
     }
@@ -39,10 +39,19 @@
         font-size: 18px;
         line-height: 28px;
         color: variables.$primary-color;
+        
+        &:hover{
+            color: variables.$secondary-color;
+        }
     }
     
     &__contact-link{
         border: 2px solid variables.$primary-color;
         color: variables.$primary-color;
+        
+        &:hover{
+            background-color: variables.$primary-color;
+            color: variables.$fourth-color;
+        }
     }
 }

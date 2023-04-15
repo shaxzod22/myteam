@@ -1,2 +1,65 @@
 @use './../variables';
 @use './../mixins';
+// footer
+.footer{
+    background-color: #002529;
+    
+    &__container{
+        padding: 48px 0;
+    }
+    
+    &__wrapper{
+        @include mixins.df();
+    }
+    
+    &__links-box__left{
+        max-width: 160px;
+        margin-right: 125px;
+    }
+    
+    &__logo__link{
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+    
+    &__list{
+        margin-right: 396px;
+    }
+    
+    &__item{
+        max-width: 174px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: variables.$fifth-color;
+    }
+    
+    &__right-box{
+        @include mixins.df($direction:column,$align:flex-end);
+        max-width: 255px;
+        gap: 51px;
+    }
+    
+    &__target__list{
+        @include mixins.df($align:center);
+        gap: 16px;
+    }
+    
+    &__target__link{
+        fill: variables.$primary-color;
+        
+        &:hover{
+            fill: variables.$secondary-color;
+        }
+    }
+    
+    &__rights-text{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: right;
+        color: variables.$fifth-color;
+    }
+}
