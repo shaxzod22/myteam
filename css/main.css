@@ -894,6 +894,7 @@ main {
   padding: 0 0 17px 14px;
   outline: none;
   position: relative;
+  color: #fff;
 }
 .contact__input::placeholder {
   font-style: normal;

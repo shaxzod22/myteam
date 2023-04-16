@@ -85,6 +85,7 @@
         padding: 0 0 17px 14px;
         outline: none;
         position: relative;
+        color: variables.$primary-color;
         
         &::placeholder{
             font-style: normal;
