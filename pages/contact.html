@@ -39,36 +39,71 @@
     
     <main class="hero">
         <section class="contact">
-            <div class="contact contact container">
+            <div class="container contact__container">
                 <div class="contact__wrapper">
                     <div class="contact__left">
                         <h1 class="contact__heading">Contact</h1>
                         
                         <h2 class="contact__little__heading">Ask us about</h2>
                         
-                        <ul class="teams__list">
+                        <ul class="teams__list contact__list">
                             <li class="teams__item">
                                 <div class="teams__img__content"></div>
                                 
                                 <div class="teams__inner-box">
-                                    <p class="teams__inner__text">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                                    <p class="teams__inner__text contact__inner__text">The quality of our talent network</p>
                                 </div>
                             </li>
                             <li class="teams__item">
                                 <div class="teams__img__content teams__img__content--secondary"></div>
                                 
                                 <div class="teams__inner-box">
-                                    <p class="teams__inner__text">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+                                    <p class="teams__inner__text contact__inner__text">Usage & implementation of our software</p>
                                 </div>
                             </li>
                             <li class="teams__item">
                                 <div class="teams__img__content teams__img__content--thirdly"></div>
                                 
                                 <div class="teams__inner-box">
-                                    <p class="teams__inner__text">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+                                    <p class="teams__inner__text contact__inner__text">How we help drive innovation</p>
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                    
+                    <div class="contact__right">
+                        <form action="https://echo.htmlacademy.ru/" class="contact__form">
+                            <div class="contact__input__box">
+                                <input type="text" class="contact__name contact__input" required name="name" placeholder="Name">
+                                <p class="contact__input__text">This field is required</p>
+                            </div>
+                            
+                            <div class="contact__input__box">
+                                <input type="email" class="contact__email contact__input" required name="email" placeholder="Email Address">
+                                
+                                <p class="contact__input__text">This field is required</p>
+                            </div>
+                            
+                            <div class="contact__input__box">
+                                <input type="text" class="contact__company__name contact__input" required name="Company Name" placeholder="Company Name">
+                                
+                                <p class="contact__input__text">This field is required</p>
+                            </div>
+                            
+                            <div class="contact__input__box">
+                                <input type="text" class="contact__title contact__input" required name="title" placeholder="Title">
+                                
+                                <p class="contact__input__text">This field is required</p>
+                            </div>
+                            
+                            <div class="contact__input__box">
+                                <input type="text" class="contact__message contact__input" required name="Message" placeholder="Message">
+                                
+                                <p class="contact__input__text">This field is required</p>
+                            </div>
+                            
+                            <button type="submit" class="contact__btn">submit</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,141 @@
+@use './../variables';
+@use './../mixins';
+
+// contact
+.contact{
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 128px;
+    
+    &::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        background-image: url(./../../img/contactpagebg1.png);
+        @include mixins.bgi();
+        left: 0;
+        
+    }
+    
+    &::after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 112px;
+        height: 200px;
+        background-image: url(./../../img/contactpagebg2.png);
+        @include mixins.bgi();
+        bottom: 0;
+        right: -1%;
+    }
+    
+    &__wrapper{
+        @include mixins.df();
+        justify-content: space-between;
+    }
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100px;
+        color: variables.$primary-color;
+        margin-bottom: 16px;
+    }
+    
+    &__little__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 32px;
+        color: variables.$secondary-color;
+    }
+    
+    &__list{
+        gap: 24px;
+    }
+    
+    &__inner__text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: variables.$primary-color
+    }
+    
+    &__right{
+        max-width: 540px;
+    }
+    
+    &__form{
+        @include mixins.df(column,center);
+        max-width: 540px;
+        gap: 24px;
+    }
+    
+    &__input{
+        display: inline-block;
+        width: 540px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid variables.$primary-color;
+        padding: 0 0 17px 14px;
+        outline: none;
+        position: relative;
+        
+        &::placeholder{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            color: variables.$fifth-color;
+        }
+        
+        &:focus{
+            +   .contact__input__text{
+                display: block;
+                font-family: 'Livvic',sans-serif;
+                font-size: 10px;
+                line-height: 12px;
+                font-style: italic;
+                color: variables.$secondary-color;
+                padding-top: 8px;
+            }
+            
+            
+            border-bottom: 1px solid variables.$secondary-color;
+            
+            &::placeholder{
+                color: variables.$secondary-color;
+                opacity: 0.6;
+            }
+        }
+    }
+    
+    &__message{
+        padding: 0 0 58px 14px;
+    }
+    
+    &__btn{
+        border: none;
+        padding: 10px 32px;
+        background-color: variables.$primary-color;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #004047;
+        border: 2px solid variables.$primary-color;
+        border-radius: 24px;
+        align-self: flex-start;
+    }
+    
+    &__input__text{
+        display: none;
+    }
+    
+}
+
